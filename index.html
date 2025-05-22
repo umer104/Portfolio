@@ -1,275 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="
-  As a System Administrator, ensure smooth IT operations by managing systems, networks, and security, 
-  troubleshooting, performing backups, and collaborating with IT teams. As a DevOps Engineer, automate 
-  processes, manage infrastructure as code, deploy cloud-native apps, and stay updated with DevOps trends 
-  for efficient software delivery.">
-  <title>Umer Khan - DevOps Engineer</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umer Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/95dc311fac.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" style="background-color: #ede7de;" id="Home">
-    <div class="container-fluid">
-      <div class="left-con">
-        <img class="logo" src="me.svg" alt="">
-      </div>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse right-con mt-3 fw-semibold" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mt-0" href="https://github.com/umer104"><i class="bi bi-github github"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="left-con">
+                <a href="#">
+                    <img class="logo" src="logo.svg" alt="Logo">
+                </a>
+            </div>
+            <div class="right-con">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link github" href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <div class="container-fluid top-container">
-    <img class="star-1 img-fluid" src="star-1.svg" alt="Star-Img">
-    <h1 class="name">I'm Umer Akmal</h1>
-    <p class="name-sub">System Administrator & DevOps Engineer</p>
-    <img class="star-2 img-fluid" src="star-2.svg" alt="Star-Img">
-    <img class="land img-fluid" src="land.svg" alt="Land-Img">
-  </div>
-
-  <div class="container-fluid">
-    <div class="mx-4 my-4">
-      <div class="card h-100">
-        <div class="card-body pb-0">
-          <div class="icon-lg rounded-circle mb-4 mt-n5">
-            <img class="me-img" src="me.svg" alt="">
-          </div>
-          <h5 class="mb-3 fs-1 fw-semibold">Hi.</h5>
-          <p class="mx-auto px-auto fs-6 font-monospace fw-semibold">As a moonlighting developer and generalist designer, <br> I'm passionate about creating interfaces that are fun, useful, and user-centric.</p>
-        </div>
-      </div>
-    </div>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 mx-4 my-3 gy-3">
-      <h1 class="title" id="Projects">Projects.</h1>
-      <div class="col">
-        <div class="card bg-light h-100">
-          <div class="card-body pb-0">
-            <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-              <img src="chillies.png" class="img-fluid rounded-start img-thumbnail img-pro" alt="Chillies-Img">
-            </div>
-            <h5 class="mb-3">Web Development & Design</h5>
-            <div id="shortText1">
-              <p class="fs-6 font-monospace fw-semibold">
-                Creating the visual look and feel of a website design. It involves designing the layout, 
-                color scheme, typography, and other visual elements.
-              </p>
-            </div>
-            <div id="fullText1" style="display: none;">
-              <p class="fs-6 font-monospace fw-semibold">
-                Writing code to create interactive elements, such as forms and buttons, and to connect 
-                the website to a database.
-              </p>
-            </div>
-            <div class="card-footer bg-light mt-auto pt-2 fs-6 font-monospace fw-semibold">
-              <a class="icon-link icon-link-hover mx-2 pointer" onclick="showFullText(1)" id="viewMoreBtn1">View More<i class="bi bi-arrow-right"></i></a>
-              <a class="icon-link icon-link-hover mx-2" href="https://mumer.xyz">View Project<i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card bg-light h-100">
-          <div class="card-body pb-0">
-            <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-              <img src="computer.png" class="img-fluid rounded-start img-thumbnail img-pro" alt="Computer-Img">
-            </div>
-            <h5 class="mb-3">Linux & Cloud Engineer</h5>
-            <div id="shortText2" style="display: block;">
-              <p class="fs-6 font-monospace fw-semibold">
-                I manage the software, hardware, and systems on a Linux server and monitor Linux operating 
-                systems and clients' needs.
-              </p>
-            </div>
-            <div id="fullText2" style="display: none;">
-              <p class="fs-6 font-monospace fw-semibold">
-                Also, I resolve user issues, address management requests, and identify potential issues by 
-                implementing security measures.
-              </p>
-            </div>
-            <div class="card-footer bg-light mt-auto pt-2 fs-6 font-monospace fw-semibold">
-              <a class="icon-link icon-link-hover mx-2 pointer" onclick="showFullText(2)" id="viewMoreBtn2">View More<i class="bi bi-arrow-right"></i></a>
-              <a class="icon-link icon-link-hover mx-2" href="https://mumer.xyz">View Project<i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card bg-light h-100">
-          <div class="card-body pb-0">
-            <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-              <img src="me-dev.svg" class="img-fluid rounded-start img-thumbnail img-pro" alt="Other-Img">
-            </div>
-            <h5 class="mb-3">Other Projects</h5>
-            <div id="shortText3" style="display: block;">
-              <p class="fs-6 font-monospace fw-semibold">
-                Work in various states of design and development, from side projects to in-flight Linux & 
-                web design and development.
-              </p>
-            </div>
-            <div id="fullText3" style="display: none;">
-              <p class="fs-6 font-monospace fw-semibold">
-                Additional details about other projects can be displayed here.
-              </p>
-            </div>
-            <div class="card-footer bg-light mt-auto pt-2 fs-6 font-monospace fw-semibold">
-              <a class="icon-link icon-link-hover mx-2 pointer" onclick="showFullText(3)" id="viewMoreBtn3">View More<i class="bi bi-arrow-right"></i></a>
-              <a class="icon-link icon-link-hover mx-2" href="https://mumer.xyz">View Project<i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-    <div class="container-fluid">
-      <h1 class="title" id="Projects">Skills.</h1>
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 row-cols-xl-5 row-cols-xl-6 mx-3 gy-3">
-        <div class="col">
-          <div class="card bg-light h-100">
-            <div class="card-body pb-0">
-              <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-                <i class="bi bi-ubuntu"></i>
-              </div>
-              <h5 class="mb-3"><a href="#">Linux</a></h5>
-              <p class="fs-6 font-monospace fw-semibold">CentOS  Ubuntu  RedHat  Kali  Rocky  Alma  Fedora</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card bg-light h-100">
-            <div class="card-body pb-0">
-              <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-                <i class="bi bi-browser-edge"></i>
-              </div>
-              <h5 class="mb-3"><a href="#">Web Design</a></h5>
-              <p class="fs-6 font-monospace fw-semibold">HTML  CSS  Javascript  Bootstrap</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card bg-light h-100">
-            <div class="card-body pb-0">
-              <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-                <i class="bi bi-database"></i>
-              </div>
-              <h5 class="mb-3"><a href="#">Database</a></h5>
-              <p class="fs-6 font-monospace fw-semibold">MySQL  Mariadb  PostgreSQL  MongoDB</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card bg-light h-100">
-            <div class="card-body pb-0">
-              <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-                <i class="bi bi-body-text"></i>
-              </div>
-              <h5 class="mb-3"><a href="#">Docker</a></h5>
-              <p class="fs-6 font-monospace fw-semibold">Image Container Multi-Image Docker-Compose Docker-Swarm</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card bg-light h-100">
-            <div class="card-body pb-0">
-              <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-                <i class="bi bi-exclude"></i>
-              </div>
-              <h5 class="mb-3"><a href="#">Kubernetes</a></h5>
-              <p class="fs-6 font-monospace fw-semibold">KCNA Application-Developer Administrator</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card bg-light h-100">
-            <div class="card-body pb-0">
-              <div class="icon-lg bg-white text-primary rounded-circle mb-4 mt-n5">
-                <i class="bi bi-filetype-py"></i>
-              </div>
-              <h5 class="mb-3"><a href="#">Python & Bash</a></h5>
-              <p class="fs-6 font-monospace fw-semibold">Django Flask Jira Selenium Bash-Complete</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="top-container">
+        <img class="star-1" src="star.svg" alt="Star">
+        <h1 class="name">Umer Khan</h1>
+        <p class="name-sub">DevOps Engineer | Cloud Developer</p>
+        <img class="land" src="landing.svg" alt="Landing Illustration">
+        <img class="star-2" src="star.svg" alt="Star">
     </div>
 
-    <div class="container-fluid">
-      <h1 class="title" id="About">About.</h1>
-      <div class="about-container">
-      <img class="my-img img-fluid" src="my.jpg" alt="My Image"> 
-      <h1 class="sub-title">I'm a Linux + Devops Engineer working remotely from Al Nafi</h1>
-      <p class="sub-para">Over the past 1+ years, I've worked in various areas of digital Projects, including Linux-Based
-      development, email, marketing, and Web app. I'm proud to have worn many hats.These days, I focus 
-      on building Help Scout's knowledge base and AI tools as a Senior Linux + Devops Engineer.</p>
-      </div>
-  </div>
-  <div class="bottom-container">
-      <h1 class="title" id="Contact">Contact.</h1>
-      <div class="bottom-contact">
-          <h1>Get In Touch</h1>
-          <h3>If You Love Coding And Programming</h3>
-          <p class="message">Love Unique Projects as much as I do? Let's Talk about how awesome they are!
-              We Can Code while we Learn more Advance Coding.</p>
-          <a class="btn btn-info" href="https://mail.google.com/mail/u/0/#inbox?compose=new">Contact Me</a>
-      </div>
-      <div class="bottom-con">
-          <a href="https://www.facebook.com/profile.php?id=100023385408814">Facebook</a>
-          <a href="https://www.linkedin.com/in/umer-khan-3703491b7/">LinkedIn</a>
-          <a href="https://twitter.com/umerIT104">Twitter</a>
-          <p class="copyright">© 2023 Umer Akmal @ Al Nafi</p>
-      </div>
-  </div>
-  <!-- Bootstrap JS and Popper.js -->
-  <script>
-    function showFullText(id) {
-      var shortText = document.getElementById("shortText" + id);
-      var fullText = document.getElementById("fullText" + id);
-      var viewMoreBtn = document.getElementById("viewMoreBtn" + id);
-      
-      if (fullText.style.display === "none") {
-        shortText.style.display = "none";
-        fullText.style.display = "block";
-        viewMoreBtn.textContent = "View Less";
-      } else {
-        shortText.style.display = "block";
-        fullText.style.display = "none";
-        viewMoreBtn.textContent = "View More";
-      }
-    }
-  </script>  
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <h2 class="title">Projects</h2>
+    <div class="container">
+        <div class="row text-center py-4">
+            <div class="col-md-4 mb-4">
+                <img class="img-pro" src="project1.svg" alt="Project 1">
+                <h3>Cloud Feedback App</h3>
+                <p>A serverless feedback form with AWS Lambda, DynamoDB, and API Gateway.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img class="img-pro" src="project2.svg" alt="Project 2">
+                <h3>Image Classifier</h3>
+                <p>Cloud-based image classifier with AWS S3, Rekognition, Lambda, and Python.</p>
+            </div>
+            <div class="col-md-4 mb-4">
+                <img class="img-pro" src="project3.svg" alt="Project 3">
+                <h3>Portfolio Site</h3>
+                <p>This responsive, static personal portfolio site hosted on Vercel.</p>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="title">About</h2>
+    <div class="about-container">
+        <img class="my-img" src="myimg.svg" alt="Umer Khan" width="200">
+        <h3 class="sub-title">Hi, I’m Umer</h3>
+        <p class="sub-para">
+            I’m a DevOps Engineer with experience in AWS, Jenkins, Docker, and Kubernetes.
+            I build scalable CI/CD pipelines and cloud-native solutions.
+        </p>
+    </div>
+
+    <h2 class="title">Contact</h2>
+    <p class="message">Let’s collaborate on cloud and DevOps solutions. Reach out via the links below.</p>
+
+    <div class="bottom-con">
+        <div class="bottom-contact">
+            <h1>Umer Khan</h1>
+            <h3>DevOps Engineer | Cloud Developer</h3>
+        </div>
+        <div>
+            <a href="mailto:umer@example.com">Email</a>
+            <a href="https://linkedin.com/in/umerkhan" target="_blank">LinkedIn</a>
+            <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        </div>
+        <div class="copyright">
+            <p>© 2025 Umer Khan. All rights reserved.</p>
+        </div>
+    </div>
 </body>
 </html>
