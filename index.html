@@ -1,87 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Umer Portfolio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/95dc311fac.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Umer Khan | DevOps Engineer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    };
+  </script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <div class="left-con">
-                <a href="#">
-                    <img class="logo" src="me.svg" alt="Logo">
-                </a>
-            </div>
-            <div class="right-con">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-                    <li class="nav-item"><a class="nav-link github" href="https://github.com/umer104" target="_blank"><i class="fab fa-github"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body class="bg-neutral-100 dark:bg-neutral-900 text-neutral-800 dark:text-neutral-200">
+  <!-- Dark Mode Toggle -->
+  <div class="fixed top-4 right-4">
+    <button onclick="document.documentElement.classList.toggle('dark')" class="p-2 rounded-full bg-neutral-300 dark:bg-neutral-700">
+      🌙/☀️
+    </button>
+  </div>
 
-    <div class="top-container">
-        <img class="star-1" src="star-1.svg" alt="Star">
-        <h1 class="name">Umer Khan</h1>
-        <p class="name-sub">DevOps Engineer | Cloud Developer</p>
-        <img class="land" src="land.svg" alt="Landing Illustration">
-        <img class="star-2" src="star-2.svg" alt="Star">
+  <!-- Header -->
+  <header class="flex items-center justify-center h-screen">
+    <div class="text-left">
+      <h1 class="text-5xl font-bold text-center sm:text-left">Umer Khan</h1>
+      <p class="text-xl text-center sm:text-left mt-4">DevOps Engineer | Cloud Developer</p>
     </div>
+  </header>
 
-    <h2 class="title">Projects</h2>
-    <div class="container">
-        <div class="row text-center py-4">
-            <div class="col-md-4 mb-4">
-                <img class="img-pro" src="computer.png" alt="Project 1">
-                <h3>Cloud Feedback App</h3>
-                <p>A serverless feedback form with AWS Lambda, DynamoDB, and API Gateway.</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img class="img-pro" src="chillies.png" alt="Project 2">
-                <h3>Image Classifier</h3>
-                <p>Cloud-based image classifier with AWS S3, Rekognition, Lambda, and Python.</p>
-            </div>
-            <div class="col-md-4 mb-4">
-                <img class="img-pro" src="computer.png" alt="Project 3">
-                <h3>Portfolio Site</h3>
-                <p>This responsive, static personal portfolio site hosted on Vercel.</p>
-            </div>
-        </div>
+  <!-- Projects Section -->
+  <section class="py-20 text-center">
+    <h2 class="text-4xl font-bold mb-10">Projects</h2>
+    <div class="grid md:grid-cols-3 gap-10 px-4">
+      <div>
+        <img src="/mnt/data/4e79df73-2e5e-4836-9803-8a6c9890a9aa.png" alt="Feedback App" class="mx-auto h-24 w-24 rounded-lg">
+        <h3 class="text-xl font-semibold mt-4">Cloud Feedback App</h3>
+        <p class="text-sm mt-2">A serverless feedback form with AWS Lambda, DynamoDB, and API Gateway.</p>
+      </div>
+      <div>
+        <img src="/mnt/data/753c5fe2-8ae4-4d50-8d9f-fc5e827ebd80.png" alt="Image Classifier" class="mx-auto h-24 w-24 rounded-lg">
+        <h3 class="text-xl font-semibold mt-4">Image Classifier</h3>
+        <p class="text-sm mt-2">Cloud-based image classifier with AWS S3, Rekognition, Lambda, and Python.</p>
+      </div>
+      <div>
+        <img src="/mnt/data/69aa2cad-f391-40bd-99e5-c4ede7f3ab9d.png" alt="Portfolio Site" class="mx-auto h-24 w-24 rounded-lg">
+        <h3 class="text-xl font-semibold mt-4">Portfolio Site</h3>
+        <p class="text-sm mt-2">This responsive, static personal portfolio site hosted on Vercel.</p>
+      </div>
     </div>
+  </section>
 
-    <h2 class="title">About</h2>
-    <div class="about-container">
-        <img class="my-img" src="my.jpg" alt="Umer Khan" width="200">
-        <h3 class="sub-title">Hi, I’m Umer</h3>
-        <p class="sub-para">
-            I’m a DevOps Engineer with experience in AWS, Jenkins, Docker, and Kubernetes.
-            I build scalable CI/CD pipelines and cloud-native solutions.
-        </p>
+  <!-- About Section -->
+  <section class="py-20 bg-neutral-200 dark:bg-neutral-800 text-left px-4">
+    <h2 class="text-4xl font-bold text-center mb-10">About</h2>
+    <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+      <img src="my.jpg" alt="Umer Khan" class="rounded-full w-40 h-40 object-cover">
+      <div class="max-w-lg">
+        <h3 class="text-2xl font-bold">Hi, I'm Umer</h3>
+        <p class="mt-4">I'm a DevOps Engineer with experience in AWS, Jenkins, Docker, and Kubernetes. I build scalable CI/CD pipelines and cloud-native solutions.</p>
+      </div>
     </div>
+  </section>
 
-    <h2 class="title">Contact</h2>
-    <p class="message">Let’s collaborate on cloud and DevOps solutions. Reach out via the links below.</p>
-
-    <div class="bottom-con">
-        <div class="bottom-contact">
-            <h1>Umer Khan</h1>
-            <h3>DevOps Engineer | Cloud Developer</h3>
-        </div>
-        <div>
-            <a href="mailto:umer@example.com">Email</a>
-            <a href="https://www.linkedin.com/in/umer-khan-ku104/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/umer104" target="_blank">GitHub</a>
-        </div>
-        <div class="copyright">
-            <p>© 2025 Umer Khan. All rights reserved.</p>
-        </div>
+  <!-- Contact Section -->
+  <section class="py-20 text-center">
+    <h2 class="text-4xl font-bold mb-6">Contact</h2>
+    <p class="mb-6">Let's collaborate on cloud and DevOps solutions. Reach out via the links below.</p>
+    <div class="flex justify-center gap-6">
+      <a href="mailto:umerakmalku@gmail.com" class="underline">Email</a>
+      <a href="https://www.linkedin.com/in/umer-khan-ku104/" class="underline">LinkedIn</a>
+      <a href="https://github.com/umer104" class="underline">GitHub</a>
     </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-neutral-800 text-neutral-100 dark:bg-neutral-950 py-4 text-center text-sm">
+    © 2025 Umer Khan. All rights reserved.
+  </footer>
 </body>
 </html>
